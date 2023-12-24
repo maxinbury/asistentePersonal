@@ -2,6 +2,7 @@ import chromadb
 from chromadb.config import Settings
 import openai
 import yaml
+import time
 from time import time, sleep
 from uuid import uuid4
 
@@ -21,20 +22,21 @@ def open_file(filepath):
         return infile.read()
 
 
-def chatbot(messages, model="gpt-4", temperature=0):
+def chatbot(messages, model="gpt-4-1106-preview", temperature=0):
     max_retry = 7
     retry = 0
-    while True:
+    while retry < max_retry:
         try:
             response = openai.ChatCompletion.create(model=model, messages=messages, temperature=temperature)
-            text = response['choices'][0]['message']['content']
+            text = response.choices[0].message.content
             
-            ###    trim message object
+            # Trim message object
             debug_object = [i['content'] for i in messages]
             debug_object.append(text)
             save_yaml('api_logs/convo_%s.yaml' % time(), debug_object)
-            if response['usage']['total_tokens'] >= 7000:
-                a = messages.pop(1)
+            
+            if response.usage.total_tokens >= 7000:
+                messages.pop(1)
             
             return text
         except Exception as oops:
@@ -52,12 +54,14 @@ def chatbot(messages, model="gpt-4", temperature=0):
 
 
 
-
 if __name__ == '__main__':
     # instantiate ChromaDB
+    import chromadb
     persist_directory = "chromadb"
-    chroma_client = chromadb.Client(Settings(persist_directory=persist_directory,chroma_db_impl="duckdb+parquet",))
+    chroma_client = chromadb.PersistentClient(path=persist_directory)
     collection = chroma_client.get_or_create_collection(name="knowledge_base")
+    # Save the data to disk
+    chroma_client.save() # Use save instead of persist
 
 
     # instantiate chatbot

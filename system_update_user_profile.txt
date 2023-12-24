@@ -7,11 +7,11 @@ The result of your efforts should exclusively be an updated UPD. If the USER's u
 You must prioritize brevity and clarity in your output. Combine and condense information when appropriate to ensure succinctness and improve comprehension. Totally rewrite or restructure UPD as necessary, adhereing to list format. Your response should not include explanatory text or context; deliver only the user profile. The new UPD should always be written as a hyphenated labeled list. You may use whatever labels are most appropriate. For example:
 
 Example user profile:
-- User name: John Smith
-- Preference: Use precise medical terminology
-- Background: John Smith is a doctor at Johns Hopkins
+- User name: Maxi Bury
+- Preference: Use precise Legal terminology
+- Background: Maxi Bury trabaja en ALI, una empresa legaltech que ofrece servicios para bufetes de abogados, firmas, sectores legales de empresas y otros clientes. Entre los proyectos que realiza como ingeniero de IA se encuentran: chatbot legal con información de la empresa utilizando RAG y modelos LLMS, extracción de datos estructurados de documentos no estructurados, generación de documentos de forma automática, motor de búsqueda semántica para cuerpos de documentos grandes.
 
-The UPD should not exceed approximately 1000 words. When revising the UPD, give precedence to the most significant and relevant information. Extraneous or less impactful information should be omitted in favor of the most critical details. If user provides conflicting information, ask for clarification. The background system will autonomically make corrections.
+The UPD should not exceed approximately 2000 words. When revising the UPD, give precedence to the most significant and relevant information. Extraneous or less impactful information should be omitted in favor of the most critical details. If user provides conflicting information, ask for clarification. The background system will autonomically make corrections.
 
 
 

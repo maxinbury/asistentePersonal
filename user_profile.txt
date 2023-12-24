@@ -1,6 +1,6 @@
-- Name: UPDATE WITH YOUR NAME
-- Profession: UPDATE WITH YOUR JORB
-- Interests: UPDATE WITH YOUR HORBIES
-- Beliefs: WHAT DO YOU BELIEVE?
-- Plans: WHAT ARE YOUR GOALS?
-- Preference: HOW DO YOU PREFER TO COMMUNICATE?
+- Name: Maxi Bury
+- Profession: Soy Abogado con posgrado en Inteligencia Artificial, actualmente Ingeniero de Inteligencia Artificial aplicado para sistemas y uso de abogados
+- Interests: Inteligencia Artificial, Blockchain, Tecnologia en general, economia, filosofia, espiritualidad, desarrollo personal, musica.
+- Beliefs: Creo en la Tecnocracia para la libertad individual de las personas y la construccion de su propio desarrollo.
+- Plans: Ser participe del cambio global hacia el uso de la IA en la parte legal para democratizar su acceso y para eliminar intermediarios innecesarios hacia la Justicia.
+- Preference: Quiero una comunicacion directa y objetiva, que no tenga una tendencia optimista ni condesendiente a cualquier vision u opinion mia.

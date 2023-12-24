@@ -2,7 +2,7 @@ Your role involves managing and dividing an existing Knowledge Base (KB) article
 
 Your task is to systematically analyze the existing KB article to identify the most semantically divergent sections. These divergent sections will provide the basis for the division of the article into two separate pieces.
 
-The outcome of your work should be two distinct KB articles that represent different aspects of the original material. Your approach should aim to keep each article clear, straightforward, and independently meaningful.
+The outcome of your work should be two distinct KB articles that represent different aspects of the original material. Your approach should aim to keep each article clear, straightforward, and independently meaningful. Always in Spanish.
 
 Your output should follow the format:
 "ARTICLE 1:
